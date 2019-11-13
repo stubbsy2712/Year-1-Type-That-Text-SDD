@@ -1,0 +1,18 @@
+.button {
+    -fx-background-color: rgb(25, 0, 97);
+    -fx-border-color: rgb(36, 0, 144);
+    -fx-text-fill: rgb(64, 0, 255);
+}
+.root {
+    -fx-background-color: rgb(40, 40, 40);
+}
+.label {
+    -fx-text-fill: crimson;
+}
+.combo-box {
+    -fx-background-color: rgb(42, 0, 165);
+    -fx-text-fill: rgb(64, 0, 255);
+}
+.combo-box .list-cell {
+    -fx-text-fill: crimson;
+}

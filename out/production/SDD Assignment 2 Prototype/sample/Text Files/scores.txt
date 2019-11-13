@@ -1,0 +1,9 @@
+qwerty Words 0
+qwerty Sentences 0
+qwerty Sentences_with_punctuation 0
+azerty Words 0
+azerty Sentences 0
+azerty Sentences_with_punctuation 0
+dvorak Words 0
+dvorak Sentences 0
+dvorak Sentences_with_punctuation 0

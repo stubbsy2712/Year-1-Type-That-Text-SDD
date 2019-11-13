@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenuController">
+   <children>
+      <ComboBox fx:id="keyboardBox" layoutX="312.0" layoutY="175.0" onAction="#findPoints" onMouseClicked="#findLayouts" prefHeight="50.0" prefWidth="400.0" promptText="Keyboard Layout" />
+      <ComboBox fx:id="difficultyBox" layoutX="312.0" layoutY="275.0" onAction="#findPoints" onMouseClicked="#setDifficulties" prefHeight="50.0" prefWidth="400.0" promptText="Difficulty" />
+      <Button fx:id="playButton" layoutX="412.0" layoutY="375.0" mnemonicParsing="false" onAction="#playGame" prefHeight="25.0" prefWidth="200.0" text="Play" />
+      <Button fx:id="quitButton" layoutX="412.0" layoutY="475.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="25.0" prefWidth="200.0" text="Quit" />
+      <Label fx:id="highScore" layoutX="312.0" layoutY="158.0" text="High Score" />
+      <Button fx:id="addLayoutButton" layoutX="752.0" layoutY="185.0" mnemonicParsing="false" onAction="#addLayout" prefHeight="25.0" prefWidth="35.0" text="+">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="helpButton" layoutX="492.0" layoutY="425.0" mnemonicParsing="false" onAction="#openHelp" text="Help" />
+      <Button fx:id="minusLayoutButton" layoutX="237.0" layoutY="185.0" mnemonicParsing="false" onAction="#minusLayout" prefHeight="25.0" prefWidth="35.0" text="-">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorMessage" layoutX="363.0" layoutY="400.0" prefHeight="25.0" prefWidth="300.0" text="Error: Either a layout or difficulty has not been selected." textFill="RED" visible="false" />
+   </children>
+</AnchorPane>

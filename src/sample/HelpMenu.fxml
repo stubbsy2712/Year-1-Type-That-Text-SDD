@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane fx:id="helpWindowTabPane" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HelpMenuController">
+   <tabs>
+      <Tab closable="false" text="The Game">
+         <content>
+            <AnchorPane prefHeight="360.0" prefWidth="640.0">
+               <children>
+                  <Label fx:id="gameExplanation" prefHeight="68.0" prefWidth="640" text="Each game last for 2.5 minutes, all sentence and words displayed are randomly generated, the objective is to enter them as quickly as possible into the box below where they are displayed. You are awarded 1 point per correct character in what you have entered, but lose 3 points for every second you took to enter, you can submit your answer by either pressing enter or clicking the submit button." wrapText="true" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab closable="false" text="Main Menu">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutY="24" prefHeight="48.0" prefWidth="640.0" text="Once a keyboard layout and difficulty have been selected, your high score for that layout and difficulty will be retrieved from scores.txt, and displayed above the drop down menu for selecting a keyboard layout." wrapText="true" />
+                  <Label prefHeight="24" prefWidth="640.0" text="To play the game select a keyboard layout and difficulty, then press play." wrapText="true" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+       <Tab closable="false" text="Adding/Deleting layouts">
+           <content>
+               <AnchorPane prefHeight="360.0" prefWidth="640.0">
+                   <children>
+                       <Label prefHeight="85.0" prefWidth="640" text="Adding a layout is simple, on the main menu click the '+' next to the drop-down menu where the menu is selected and a pop-up menu will appear, then enter your desired name for the new layout in the box and click confirm or press enter to submit the name. If the name is valid, 3 lines will be created in scores.txt (unless the layout already exists, in which case a pop-up will tell you it already exists), one for each difficulty, the high score for both difficulties on the new layout will be set to 0 by default." wrapText="true" />
+                       <Label layoutY="85.0" prefHeight="34.0" prefWidth="640.0" text="Deleting a layout is even more simple, click the '-' button on the left of the drop-down menu where the layout is chosen, then the selected layout will be deleted (which is done by removing it's 3 lines from scores.txt)." wrapText="true" />
+                   </children></AnchorPane>
+           </content>
+       </Tab>
+   </tabs>
+</TabPane>
